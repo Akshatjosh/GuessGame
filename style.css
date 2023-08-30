@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+body {
+  background-color: black;
+  font-family: "Press Start 2P", "cursive";
+}
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reset-btn {
+  font-family: "Press Start 2P", "cursive";
+  margin: 10px;
+  padding: 10px 12px;
+  font-size: 1.5em;
+}
+.reset-btn:hover {
+  font-weight: bold;
+  border: 5px solid #eb5757;
+}
+.range {
+  margin-right: 10px;
+  color: white;
+  font-size: 20px;
+}
+/* hero-section */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.gameHeading {
+  margin-top: 2%;
+  font-weight: bold;
+}
+
+.randomNumber {
+  margin-top: 2%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: black;
+  height: 80px;
+  width: 100px;
+  border: 2px solid white;
+  background-color: white;
+}
+
+/* Add a border to the .randomNumber element that attaches to the line */
+.randomNumber::before {
+  content: "";
+  position: absolute;
+  top: 28%;
+  left: -10px;
+  transform: translateY(-50%);
+  border-top: 5px solid white;
+  width: 47vw;
+}
+
+.randomNumber::after {
+  content: "";
+  position: absolute;
+  top: 28%;
+  right: -10px;
+  transform: translateY(-50%);
+  border-top: 5px solid white;
+  width: 47vw;
+}
+/* footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* left-footer */
+.left-footer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+  margin-left: 20px;
+}
+.guessNumber {
+  margin-top: 20px;
+  font-family: "Press Start 2P", "cursive";
+  font-size: 25px;
+  text-align: center;
+  height: 80px;
+  width: 100px;
+}
+.guessNumber:hover {
+  font-weight: bold;
+  border: 5px solid #eb5757;
+}
+.check {
+  font-family: "Press Start 2P", "cursive";
+  padding: 10px 12px;
+  font-size: 1.5em;
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+.check:hover {
+  font-weight: bold;
+  border: 5px solid #eb5757;
+}
+/* right-footer */
+.right-footer {
+  margin-top: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 45px;
+  margin-right: 55px;
+}

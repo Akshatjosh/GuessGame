@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Game</title>
+    <!--Favicon-->
+    <link
+      rel="shortcut icon"
+      href="icons8-video-game-32.png"
+      type="image/x-icon"
+    />
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <!--google-font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header">
+      <button class="reset-btn">Again !</button>
+      <p class="range">&lt; Between 1 to 50 &gt;</p>
+    </header>
+    <!--hero-Section-->
+    <section class="hero-section">
+      <h1 id="gameHeading">Guess Number</h1>
+
+      <p class="randomNumber">?</p>
+    </section>
+    <!--Footer-->
+    <footer class="footer">
+      <div class="left-footer">
+        <input type="number" name="number" id="number" class="guessNumber" />
+        <button class="check">Check !</button>
+      </div>
+      <div class="right-footer">
+        <p class="guess-p">Start Guessing ...</p>
+        <p>Score : <span class="score">20</span></p>
+
+        <p>Highscore :<span class="highscore">0</span></p>
+      </div>
+    </footer>
+    <!--Script-->
+    <script src="script.js"></script>
+  </body>
+</html>
